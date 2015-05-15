@@ -1,1 +1,142 @@
 /* CSS declarations go here */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+}
+
+#container {
+	width: 600px;
+	margin: 0 auto 0 auto;
+}
+
+#container h1 {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+#board {
+	margin: 0 auto 0 auto;
+}
+
+#credits {
+	text-align: right;
+	margin-top: 50px;
+}
+
+td.game-box {
+
+}
+
+td#game {
+	width: 105px;
+	height: 105px;
+	padding: 0px;
+	border: 0px;
+}
+
+td.box {
+	width: 25px;
+	height: 25px;
+	margin: 0px;
+	text-align: center;
+}
+
+.box.top-left {
+	border-right: 3px solid #4d4d4d;
+	border-bottom: 3px solid #4d4d4d;
+	padding: 0 5px 5px 0;
+}
+.box.top-center {
+	border-bottom: 3px solid #4d4d4d;
+	padding: 0 5px 5px 5px;
+}
+.box.top-right {
+	border-left: 3px solid #4d4d4d;
+	border-bottom: 3px solid #4d4d4d;
+	padding: 0 0 5px 5px;
+}
+.box.center-left {
+	border-right: 3px solid #4d4d4d;
+	padding: 5px 5px 5px 0;
+}
+.box.center-center {
+	/* pass */
+	padding: 5px;
+}
+.box.center-right {
+	border-left: 3px solid #4d4d4d;
+	padding: 5px 0 5px 5px;
+}
+.box.bottom-left {
+	border-right: 3px solid #4d4d4d;
+	border-top: 3px solid #4d4d4d;
+	padding: 5px 5px 0 0;
+}
+.box.bottom-center {
+	border-top: 3px solid #4d4d4d;
+	padding: 5px 5px 0 5px;
+}
+.box.bottom-right {
+	border-left: 3px solid #4d4d4d;
+	border-top: 3px solid #4d4d4d;
+	padding: 5px 0 0 5px;
+}
+
+.game-box.top-left {
+	border-right: 5px solid #4d4d4d;
+	border-bottom: 5px solid #4d4d4d;
+	padding: 0 10px 10px 0;
+}
+.game-box.top-center {
+	border-bottom: 5px solid #4d4d4d;
+	padding: 0 10px 10px 10px;
+}
+.game-box.top-right {
+	border-left: 5px solid #4d4d4d;
+	border-bottom: 5px solid #4d4d4d;
+	padding: 0 0 10px 10px;
+}
+.game-box.center-left {
+	border-right: 5px solid #4d4d4d;
+	padding: 10px 10px 10px 0;
+}
+.game-box.center-center {
+	/* pass */
+	padding: 10px;
+}
+.game-box.center-right {
+	border-left: 5px solid #4d4d4d;
+	padding: 10px 0 10px 10px;
+}
+.game-box.bottom-left {
+	border-right: 5px solid #4d4d4d;
+	border-top: 5px solid #4d4d4d;
+	padding: 10px 10px 0 0;
+}
+.game-box.bottom-center {
+	border-top: 5px solid #4d4d4d;
+	padding: 10px 10px 0 10px;
+}
+.game-box.bottom-right {
+	border-left: 5px solid #4d4d4d;
+	border-top: 5px solid #4d4d4d;
+	padding: 10px 0 0 10px;
+}
+
+.item {
+	width: 25px;
+	height: 25px;
+}
+
+.box.x .item {
+	background-color: #d14d4d;
+}
+.box.o .item {
+	background-color: #4d4dae;
+	border-radius: 12px;
+}
+.game-box.r {
+	background-color: #4da34d;
+}

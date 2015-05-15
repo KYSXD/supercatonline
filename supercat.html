@@ -1,14 +1,55 @@
 <head>
-  <title>supercat</title>
+	<title>supercat</title>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+	<div id="container">
+		<h1>¿Ya jugaste el supergato?</h1>
 
-  {{> hello}}
+		{{> game}}
+
+		<div id="credits">
+			by <a href="https://twitter.com/categulario">@categulario</a>
+		</div>
+	</div>
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="game">
+	<table id="board" cellpadding="0" cellspacing="0">
+		<tr>
+			<td class="game-box top-left">{{> box}}</td>
+			<td class="game-box top-center">{{> box}}</td>
+			<td class="game-box top-right">{{> box}}</td>
+		</tr>
+		<tr>
+			<td class="game-box center-left">{{> box}}</td>
+			<td class="game-box center-center">{{> box}}</td>
+			<td class="game-box center-right">{{> box}}</td>
+		</tr>
+		<tr>
+			<td class="game-box bottom-left">{{> box}}</td>
+			<td class="game-box bottom-center">{{> box}}</td>
+			<td class="game-box bottom-right">{{> box}}</td>
+		</tr>
+	</table>
+</template>
+
+<template name="box">
+	<table id="game" cellpadding="0" cellspacing="0">
+		<tr>
+			<td class="box top-left"><div class="item"></div></td>
+			<td class="box top-center"><div class="item"></div></td>
+			<td class="box top-right"><div class="item"></div></td>
+		</tr>
+		<tr>
+			<td class="box center-left"><div class="item"></div></td>
+			<td class="box center-center"><div class="item"></div></td>
+			<td class="box center-right"><div class="item"></div></td>
+		</tr>
+		<tr>
+			<td class="box bottom-left"><div class="item"></div></td>
+			<td class="box bottom-center"><div class="item"></div></td>
+			<td class="box bottom-right"><div class="item"></div></td>
+		</tr>
+	</table>
 </template>
